@@ -1,0 +1,141 @@
+preconnect:
+    - https://gcore.jsdelivr.net
+    - https://unpkg.com
+    - https://cdn.bootcdn.net
+
+inject:
+    head:
+        - <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+        - <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        - <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        - <link rel="manifest" href="/assets/astral/site.webmanifest">
+        - <link rel="shortcut icon" href="/assets/favicon.ico">
+        - <meta name="theme-color" content="#f8f8f8">
+        - <link rel="stylesheet" type="text/css" href="/assets/css/index.css">
+        - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css" media="all" />
+
+logo:
+    icon: /assets/icon.svg
+    title: 星辰跳动
+    subtitle: '技术与创新探索 | Tech & Innovation'
+
+open_graph:
+    enable: false
+
+menubar:
+    columns: 4
+    items:
+        - id: post
+          theme: '#1BCDFC'
+          icon: solar:documents-bold-duotone
+          title: 博客
+          url: /
+        - id: topic
+          theme: '#3DC550'
+          icon: solar:notebook-bookmark-bold-duotone
+          title: 专栏
+          url: /topic/
+        - id: explore
+          theme: '#FA6400'
+          icon: solar:planet-bold-duotone
+          title: 探索
+          url: /explore/
+        - id: social
+          theme: '#F44336'
+          icon: solar:chat-square-like-bold-duotone
+          title: 社交
+          url: /friends/
+
+search:
+    placeholder: 在 Astral Wave 中搜索...
+    service: local_search
+    local_search:
+        field: all
+        path: /search.json
+        content: true
+        codeblock: true
+
+site_tree:
+    home:
+        sidebar: starter, welcome, recent
+    index_blog:
+        sidebar: starter, welcome, recent
+    index_topic:
+        menu_id: topic
+    topic:
+        menu_id: topic
+
+article:
+    auto_cover: false
+    type: tech # tech/story
+    auto_excerpt: 200
+    share: [wechat, weibo, email, link]
+    license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
+
+style:
+    color:
+        # 动态颜色（会根据明暗主题重设明度值，只用关心色相和饱和度即可）
+        background: 'hsl(212 16% 98%)' # 浅色背景颜色
+        block: 'hsl(212 8% 95%)' # 块背景颜色
+        code: 'hsl(14 100% 48%)' # 行内代码颜色
+        text: 'hsl(0 0% 20%)' # 文本颜色
+        # 主题色配置（不会根据明暗动态调整，请设置为通用的颜色）
+        theme: 'hsl(192 98% 55%)' # 主题色
+        accent: 'hsl(14 100% 57%)' # 强调色
+        link: 'hsl(207 90% 54%)' # 超链接颜色
+        button: 'hsl(192 98% 55%)' # 按钮颜色
+        hover: 'hsl(14 100% 57%)' # 按钮高亮颜色
+    text-align: justify
+    smooth_scroll: false
+    codeblock:
+        scrollbar: 0px
+    font-size:
+        body: 1rem
+    font-family:
+        logo: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+        body: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
+        code: '"LXGW WenKai Screen", Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+        codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+    leftbar:
+        background-image: url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg)
+        blur-px: 100px # 模糊半径
+        blur-bg: var(--alpha60) # 模糊颜色
+
+# AI 摘要
+# https://github.com/qxchuckle/Post-Summary-AI
+tianli_gpt:
+    enable: #true
+    js: https://jsd.onmicrosoft.cn/gh/qxchuckle/Post-Summary-AI@6.0/chuckle-post-ai.min.js
+    field: post # all, post, wiki
+    key: 5Q5mpqRK5DkwT1X9Gi5e # tianli_gpt key
+    total_length: 1000 # 设置提交的字数限制，默认为1000字，上限为5000，超过5000字符将被截断
+    typewriter: true # 打字机动画
+    summary_directly: true # 是否直接显示摘要，否则显示 AI 简介
+    rec_method: all # all, web # 文章推荐方式，all：匹配数据库内所有文章进行推荐，web：仅当前站内的文章，默认all
+    hide_shuttle: true # 是否隐藏矩阵穿梭
+    summary_toggle: false # 是否开启切换简介功能，经过一些处理后，重新生成一份简介，这将消耗key字数
+    interface: # AI 信息展示
+        name: AI摘要
+        introduce: '我是文章辅助AI: QX-AI，点击下方的按钮，让我生成本文简介、推荐相关文章等。'
+        version: TianliGPT
+        button: ['介绍自己', '推荐文章', '生成摘要', '矩阵穿梭'] # 底部按钮文字
+
+footer:
+    social:
+        qq:
+            icon: '<img src="/assets/social/qq.png"/>'
+            url: tencent://message/?uin=10947580&Site=&Menu=yes
+        weibo:
+            icon: '<img src="/assets/social/weibo.png"/>'
+            url: https://weibo.com/u/2080081175
+        wechat:
+            icon: '<img src="/assets/social/wechat.png"/>'
+            url: /assets/social/wechat-qr.jpg
+        telegram:
+            icon: '<img src="/assets/social/telegram.png"/>'
+            url: https://t.me/astralwaveio
+
+comments:
+    service: # beaudar, utterances, giscus, twikoo, waline, artalk
+    lazyload: # true
+

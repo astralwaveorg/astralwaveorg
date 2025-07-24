@@ -1,0 +1,56 @@
+name: 🚀 自动化部署工作流
+
+on:
+    workflow_dispatch:
+        inputs:
+            reason:
+                description: '📝 请输入本次手动部署的原因 (可选)'
+                required: false
+                default: '手动触发部署'
+
+    push:
+        branches:
+            - main
+
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        name: 🚀 自动部署
+        steps:
+            # 1. 获取您的项目源码 ⬇️
+            - name: Checkout 代码 📂
+              uses: actions/checkout@v4
+
+            # 2. 配置 Node.js 运行环境 🛠️
+            - name: 设置 Node.js 环境 (版本 22) ⚙️
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 'lts/jod'
+
+            # 3. 安装依赖并生成网站静态文件 🏗️
+            - name: 安装依赖 & 生成 Hexo 静态文件 📄
+              run: |
+                  echo "➡️ 步骤 1/3: 正在安装项目依赖，请稍候... ⏳"
+                  npm i # 保持原有命令 'npm i'
+                  echo "✅ 项目依赖安装完成！"
+
+                  echo "➡️ 步骤 2/3: 正在全局安装 Hexo CLI 工具... 🔗"
+                  npm install hexo-cli -g # 保持原有命令 'npm install hexo-cli -g'
+                  echo "✅ Hexo CLI 安装完成！"
+
+                  echo "➡️ 步骤 3/3: 正在清理并生成 Hexo 静态文件... ✨"
+                  hexo clean && hexo generate # 保持原有命令 'hexo clean && hexo generate'
+                  echo "🎉 网站静态文件已成功生成到 public/ 目录！"
+
+            # 4. 部署生成的静态文件到您的远程服务器 📤
+            - name: 部署静态文件到远程服务器 🚀
+              uses: easingthemes/ssh-deploy@main
+              with:
+                  SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+                  ARGS: '-rltgoDzvO --delete'
+                  EXCLUDE: '.well-known, .user.ini'
+                  SOURCE: public/
+                  REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+                  REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+                  REMOTE_USER: ${{ secrets.REMOTE_USER }}
+                  TARGET: ${{ secrets.DEPLOY_DIR }}

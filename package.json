@@ -1,0 +1,39 @@
+{
+    "name": "astral-wave",
+    "version": "0.1",
+    "private": true,
+    "scripts": {
+        "g": "hexo clean && hexo generate",
+        "build": "hexo clean && hexo generate",
+        "c": "hexo clean",
+        "clean": "hexo clean",
+        "d": "hexo deploy",
+        "deploy": "hexo deploy",
+        "s": "hexo clean && hexo server",
+        "server": "hexo clean && hexo server"
+    },
+    "hexo": {
+        "version": "7.3.0"
+    },
+    "dependencies": {
+        "@paralleldrive/cuid2": "^2.2.2",
+        "dompurify": "^3.2.5",
+        "hexo": "^7.3.0",
+        "hexo-filter-date-from-git": "^0.2.0",
+        "hexo-fs": "^5.0.0",
+        "hexo-generator-archive": "^2.0.0",
+        "hexo-generator-category": "^2.0.0",
+        "hexo-generator-index": "^4.0.0",
+        "hexo-generator-tag": "^2.0.0",
+        "hexo-pagination": "^4.0.0",
+        "hexo-permalink-pinyin": "^1.1.0",
+        "hexo-renderer-ejs": "^2.0.0",
+        "hexo-renderer-marked": "^7.0.1",
+        "hexo-renderer-stylus": "^3.0.1",
+        "hexo-server": "^3.0.0",
+        "hexo-theme-landscape": "^1.1.0",
+        "hexo-theme-stellar": "^1.29.1",
+        "hexo-util": "^3.3.0",
+        "prismjs": "^1.30.0"
+    }
+}

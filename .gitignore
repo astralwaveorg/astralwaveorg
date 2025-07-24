@@ -1,0 +1,60 @@
+# Hexo specific ignores
+# -------------------------
+# The generated static website files. Always ignore the output.
+public/
+# Deployment temporary directories (e.g., .deploy_git)
+.deploy*/
+# Hexo's internal database file, regenerated on each build.
+db.json
+# Hexo's internal cache directory (used in older versions, good to ignore).
+.hexo_store/
+# Hexo log files.
+logs/
+*.log
+
+# Node.js and Package Manager specific ignores
+# ---------------------------------------------
+# Dependency directory - DO NOT commit installed packages!
+node_modules/
+# npm lock file - Generally commit IF you primarily use npm for dependency management.
+# If using yarn or pnpm, you might want to ignore this.
+package-lock.json
+# yarn lock file - Commit IF you primarily use yarn. Ignore if using npm or pnpm.
+yarn.lock
+# pnpm lock file - Commit IF you primarily use pnpm. Ignore if using npm or yarn.
+pnpm-lock.yaml
+pnpm-workspace.yaml
+# Debug logs from package managers
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor and OS specific ignores
+# -------------------------------
+# VS Code specific files. Contains user workspace settings, tasks, etc.
+# You might want to ONLY ignore temporary files and share settings.json/extensions.json
+.vscode/
+# Example of ignoring most of .vscode but keeping settings (uncomment if needed):
+# !.vscode/settings.json
+# !.vscode/extensions.json
+# # Ignore everything else in .vscode/
+# .vscode/*
+
+# macOS specific ignores
+# Files created by macOS Finder
+.DS_Store
+# Resource forks files created by macOS
+._*
+
+# Other common temporary or system files
+# --------------------------------------
+# Swap files created by some editors (like Vim)
+*.swp
+*.swo
+# Backup files created by some editors (like Emacs)
+*~
+# Windows thumbnail cache (doesn't hurt to include)
+thumbs.db
+
+# Ignore multiconfig.yml
+_multiconfig.yml
