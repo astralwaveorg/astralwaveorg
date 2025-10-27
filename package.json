@@ -18,7 +18,7 @@
     "dependencies": {
         "@paralleldrive/cuid2": "^2.2.2",
         "dompurify": "^3.2.5",
-        "hexo": "^7.3.0",
+        "hexo": "^8.1.0",
         "hexo-filter-date-from-git": "^0.2.0",
         "hexo-fs": "^5.0.0",
         "hexo-generator-archive": "^2.0.0",
