@@ -16,7 +16,7 @@
         "version": "7.3.0"
     },
     "dependencies": {
-        "@paralleldrive/cuid2": "^2.2.2",
+        "@paralleldrive/cuid2": "^3.0.4",
         "dompurify": "^3.2.5",
         "hexo": "^8.1.1",
         "hexo-filter-date-from-git": "^0.2.0",
