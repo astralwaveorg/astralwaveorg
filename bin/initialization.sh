@@ -2,23 +2,23 @@
 
 # 定义颜色输出函数
 print_green() {
-    echo -e "\033[0;32m$1\033[0m"
+	echo -e "\033[0;32m$1\033[0m"
 }
 
 print_red() {
-    echo -e "\033[0;31m$1\033[0m"
+	echo -e "\033[0;31m$1\033[0m"
 }
 
 print_blue() {
-    echo -e "\033[0;34m$1\033[0m"
+	echo -e "\033[0;34m$1\033[0m"
 }
 
 print_yellow() {
-    echo -e "\033[0;33m$1\033[0m"
+	echo -e "\033[0;33m$1\033[0m"
 }
 
 echo "当前脚本目录： $(pwd)"
-cd /Users/athena/GitHubRepos/astralwaveio
+cd /Users/athena/GitHubRepos/astralwaveorg
 echo "打开后目录： $(pwd)"
 
 set -e # 遇到错误立即退出
