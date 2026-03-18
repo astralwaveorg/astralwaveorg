@@ -1,4 +1,6 @@
 ---
+topic: beginner
+topic: backend
 title: Python 列表操作小结
 date: 2019-05-22 01:15:43
 categories:
@@ -9,6 +11,7 @@ tags:
   - 入门
 description: Python 列表常用操作，入门必学
 ---
+topic: backend
 
 # Python 列表操作小结
 

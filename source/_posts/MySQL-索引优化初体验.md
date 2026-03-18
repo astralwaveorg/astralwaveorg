@@ -1,4 +1,5 @@
 ---
+topic: backend
 title: MySQL 索引优化初体验
 date: 2020-06-08 01:12:44
 categories:
@@ -10,6 +11,7 @@ tags:
   - 性能优化
 description: 第一次因为索引问题导致的性能问题，以及排查和解决过程
 ---
+topic: backend
 
 # MySQL 索引优化初体验
 

@@ -1,4 +1,6 @@
 ---
+topic: beginner
+topic: beginner
 title: 高效掌握 Git
 layout: post
 published: true
@@ -14,12 +16,14 @@ author: Astral
 lang: zh-CN
 date: 2025-05-09 01:10:12
 ---
+topic: beginner
 
 # 高效掌握 Git：最常用命令与面试高频问题总结
 
 > 写在前面：Git这门技术吧，说简单也简单，说复杂也复杂。简单是因为日常操作就那么几个命令，复杂是因为背后涉及的概念和工作流可以很深。这篇文章咱们不整虚的，就聊聊实际工作中真正能用到的干货，以及面试中容易被问到的高频问题。
 
 ---
+topic: beginner
 
 ## 一、实际工作中最常用的 Git 命令
 
@@ -133,6 +137,7 @@ git pull --rebase origin main
 ```
 
 ---
+topic: beginner
 
 ## 二、分支管理策略：没有规矩不成方圆
 
@@ -181,6 +186,7 @@ git switch -c feature/my-awesome-feature
 这个比较极端，一般团队hold不住，了解一下就行。
 
 ---
+topic: beginner
 
 ## 三、面试中最常见的 Git 问题与高分答案
 
@@ -198,6 +204,7 @@ Git 是分布式版本控制系统（DVCS）。每个开发者本地都有一份
 从实际开发角度，Git 的分支创建和切换几乎是瞬时的，而 SVN 的分支操作要慢得多。
 
 ---
+topic: beginner
 
 ### Q2: Git 的三个核心区域是什么？
 
@@ -218,6 +225,7 @@ Git 有三个核心区域：
 理解这个很重要，因为它直接影响你能不能精确控制每次提交的内容。
 
 ---
+topic: beginner
 
 ### Q3: 什么是 Commit？如何写好 Commit Message？
 
@@ -241,6 +249,7 @@ Fixes #123
 ```
 
 ---
+topic: beginner
 
 ### Q4: 为什么要用分支（Branch）？
 
@@ -257,6 +266,7 @@ Fixes #123
 简单说，分支让你可以在不影响别人的情况下“大展拳脚”。
 
 ---
+topic: beginner
 
 ### Q5: git fetch 和 git pull 有什么区别？
 
@@ -269,6 +279,7 @@ Fixes #123
 我的习惯是：如果是多人协作的分支，我会先用 `git fetch`，看看有什么变化，再决定用 `merge` 还是 `rebase`。直接 `git pull` 有时候会引入不必要的合并提交。
 
 ---
+topic: beginner
 
 ### Q6: .gitignore 有什么作用？应忽略哪些文件？
 
@@ -294,6 +305,7 @@ dist/
 ```
 
 ---
+topic: beginner
 
 ### Q7: 合并冲突（Conflict）如何解决？
 
@@ -318,6 +330,7 @@ dist/
 小技巧：用 VS Code 或其他IDE，它们有很好的冲突解决UI，会让你选择保留哪一边的修改，或者两边都保留。
 
 ---
+topic: beginner
 
 ### Q8: 如何撤销提交？git reset 和 git revert 区别？
 
@@ -350,6 +363,7 @@ git revert abc1234
 - 如果是已经推送到远程的公共分支，必须用 `revert`，因为 `reset` 会修改历史，可能影响别人
 
 ---
+topic: beginner
 
 ### Q9: 暂存区（Staging Area）为什么重要？
 
@@ -372,6 +386,7 @@ git commit -m "修复登录bug"
 ```
 
 ---
+topic: beginner
 
 ### Q10: 你常用的 Git 工作流？
 
@@ -400,6 +415,7 @@ git push -u origin feature/user-profile
 ```
 
 ---
+topic: beginner
 
 ## 四、实战技巧：工作中非常好用的Git技能
 
@@ -486,6 +502,7 @@ git bisect reset
 ```
 
 ---
+topic: beginner
 
 ## 五、常见陷阱和如何避免
 
@@ -526,6 +543,7 @@ git revert -m 1 HEAD
 ```
 
 ---
+topic: beginner
 
 ## 总结
 
@@ -537,6 +555,7 @@ git revert -m 1 HEAD
 希望这篇文章能帮你在 Git 学习和面试中少走弯路。如果觉得有用，点个赞、在看、打赏（不是）都可以，咱们下期再见！
 
 ---
+topic: beginner
 
 **参考资料：**
 - [1] Pro Git Book（免费电子书的）

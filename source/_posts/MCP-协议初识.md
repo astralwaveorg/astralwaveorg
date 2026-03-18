@@ -1,4 +1,5 @@
 ---
+topic: ai
 title: MCP 协议初识
 date: 2025-01-18 01:28:44
 categories:
@@ -10,6 +11,7 @@ tags:
   - 协议
 description: Model Context Protocol 是什么？AI Agent 的新标准
 ---
+topic: ai
 
 # MCP 协议初识
 

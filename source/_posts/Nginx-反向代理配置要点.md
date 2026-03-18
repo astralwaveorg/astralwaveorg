@@ -1,4 +1,6 @@
 ---
+topic: backend
+topic: backend
 title: Nginx 反向代理配置要点
 date: 2021-08-30 01:05:32
 categories:
@@ -10,6 +12,7 @@ tags:
   - 配置
 description: Nginx 反向代理完整配置指南，从基础到生产环境实战
 ---
+topic: backend
 
 # Nginx 反向代理配置要点
 

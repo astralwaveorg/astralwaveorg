@@ -1,4 +1,6 @@
 ---
+topic: frontend
+topic: frontend
 title: 技术进化的三重奏：2024年React核心能力深度剖析
 layout: post
 published: true
@@ -14,6 +16,7 @@ author: Astral
 lang: zh-CN
 date: 2024-05-09 01:46:26
 ---
+topic: frontend
 
 # 技术进化的三重奏：2024年React核心能力深度剖析
 
@@ -24,6 +27,7 @@ date: 2024-05-09 01:46:26
 废话不多说，咱们直接开始。
 
 ---
+topic: frontend
 
 ## 一、React 19：编译器革新与性能新纪元
 
@@ -142,6 +146,7 @@ function LikeButton({ postId }) {
   A: 确实需要注意。并发渲染下，一个渲染任务可能会被中断，然后开始另一个。这时候如果副作用不是幂等的，可能会出问题。所以最好确保副作用是“干净”的，或者使用useEffect来管理。
 
 ---
+topic: frontend
 
 ## 二、Hooks体系：函数式范式的灵魂
 
@@ -324,6 +329,7 @@ function ResponsiveComponent() {
   A: 惯例是名字以"use"开头，这样React才能正确识别它是一个Hook。其他的就和普通函数命名一样了，尽量做到“见名知意”。
 
 ---
+topic: frontend
 
 ## 三、TypeScript：类型系统与React的深度融合
 
@@ -450,6 +456,7 @@ function UserList({ users }: { users: User[] }) {
   4. 不要过度类型化，有时候 `any` 反而更实用
 
 ---
+topic: frontend
 
 ## 结语：拥抱变化，持续精进
 
@@ -464,6 +471,7 @@ React从2013年发布到现在，已经走过了十多个年头。从最初的Vi
 好了，今天就先聊到这儿。如果觉得有帮助，点个赞再走？不强求，咱们下期再见。
 
 ---
+topic: frontend
 
 **参考资料：**
 - [1] React官方文档 - Virtual DOM与Diff算法

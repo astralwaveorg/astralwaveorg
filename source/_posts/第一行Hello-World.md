@@ -1,4 +1,6 @@
 ---
+topic: beginner
+topic: beginner
 title: 第一行 Hello World
 date: 2019-03-15 00:32:18
 categories:
@@ -9,6 +11,7 @@ tags:
   - 新手
 description: 2019年第一次写下 Hello World，一个普通人的编程起点
 ---
+topic: beginner
 
 # 第一行 Hello World
 
@@ -46,5 +49,6 @@ print("Hello World")
 我很庆幸那天老王推了我一把。虽然现在写得也不怎么样，但至少迈出了第一步。
 
 ---
+topic: beginner
 
 **写在后面**：这篇文章是 2026 年回头写的。2019 年的我绝对想不到，后面会走这么远。如果你是新手，别想太多，先敲下第一行代码再说。

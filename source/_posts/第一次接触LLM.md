@@ -1,4 +1,5 @@
----
+---	opic: ai
+topic: ai
 title: 第一次接触 LLM
 date: 2023-03-20 00:58:42
 categories:
@@ -10,6 +11,7 @@ tags:
   - AI
 description: 2023年第一次使用 ChatGPT，一个程序员的真实感受和思考
 ---
+topic: ai
 
 # 第一次接触 LLM
 

@@ -1,4 +1,5 @@
 ---
+topic: frontend
 title: TypeScript 真香警告
 date: 2022-02-18 01:18:45
 categories:
@@ -10,6 +11,7 @@ tags:
   - 类型系统
 description: 从拒绝到真香，TypeScript 给我带来了哪些改变
 ---
+topic: frontend
 
 # TypeScript 真香警告
 

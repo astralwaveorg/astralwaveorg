@@ -1,0 +1,6 @@
+name: architecture
+title: 架构设计
+subtitle: 系统架构与微服务
+description: 系统架构设计相关文章，包括微服务、分布式系统、架构模式等。
+icon: solar:grid-bold-duotone
+color: '#F44336'

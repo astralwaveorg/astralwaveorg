@@ -1,4 +1,6 @@
 ---
+topic: ai
+topic: ai
 title: Prompt Engineering 实践总结
 date: 2023-07-15 01:08:29
 categories:
@@ -10,6 +12,7 @@ tags:
   - 提示词
 description: 与 LLM 相处一年的经验总结，如何写出更好的 Prompt
 ---
+topic: ai
 
 # Prompt Engineering 实践总结
 

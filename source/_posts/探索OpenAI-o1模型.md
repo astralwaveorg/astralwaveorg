@@ -1,4 +1,6 @@
 ---
+topic: ai
+topic: ai
 title: 探索 OpenAI o1 模型
 date: 2025-02-28 00:52:33
 categories:
@@ -9,6 +11,7 @@ tags:
   - LLM
 description: OpenAI o1 模型初体验，推理能力实测与思考
 ---
+topic: ai
 
 # 探索 OpenAI o1 模型
 
@@ -208,5 +211,6 @@ o1 确实让我惊艳了一把。它证明了 LLM 不只是"拟合训练数据"�
 **TL;DR**：o1 = 贵，但强。适合深度思考问题，普通问题还是用 GPT-4 吧。
 
 ---
+topic: ai
 
 *本文系 AI 辅助创作，内容为个人实测体验，仅供参考。*

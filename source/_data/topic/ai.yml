@@ -1,0 +1,6 @@
+name: ai
+title: AI 与大模型
+subtitle: LLM、Agent、RAG 与 AI 实践
+description: 人工智能与大模型相关的技术文章，包括 LLM、Agent、RAG、Prompt Engineering 等。
+icon: solar:ai-bold-duotone
+color: '#9C27B0'

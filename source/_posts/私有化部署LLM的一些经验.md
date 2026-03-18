@@ -1,4 +1,6 @@
 ---
+topic: ai
+topic: ai
 title: 私有化部署 LLM 的一些经验
 date: 2024-02-12 00:47:53
 categories:
@@ -12,6 +14,7 @@ tags:
   - 部署
 description: 本地部署大模型，Ollama + GPU 完整配置指南
 ---
+topic: ai
 
 # 私有化部署 LLM 的一些经验
 

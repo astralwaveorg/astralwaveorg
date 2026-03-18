@@ -1,4 +1,6 @@
 ---
+topic: backend
+topic: backend
 title: Redis 缓存实战
 date: 2021-01-25 01:28:53
 categories:
@@ -10,6 +12,7 @@ tags:
   - 性能
 description: 项目中第一次使用 Redis 做缓存，从 200ms 优化到 5ms
 ---
+topic: backend
 
 # Redis 缓存实战
 

@@ -1,4 +1,5 @@
 ---
+topic: devops
 title: CI/CD 流水线搭建记录
 date: 2022-06-25 00:52:17
 categories:

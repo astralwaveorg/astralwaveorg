@@ -1,0 +1,6 @@
+name: backend
+title: 后端开发
+subtitle: Python、Go、数据库与 API 设计
+description: 后端开发相关的技术文章，包括 Python、Go、数据库优化、API 设计等。
+icon: solar:code-bold-duotone
+color: '#3DC550'

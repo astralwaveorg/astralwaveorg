@@ -1,4 +1,6 @@
 ---
+topic: frontend
+topic: frontend
 title: 第一次用 Vue.js 写页面
 date: 2020-09-17 00:38:27
 categories:
@@ -10,6 +12,7 @@ tags:
   - JavaScript
 description: 2020年第一次使用 Vue.js 开发前端页面，从后端到前端的转型经历
 ---
+topic: frontend
 
 # 第一次用 Vue.js 写页面
 

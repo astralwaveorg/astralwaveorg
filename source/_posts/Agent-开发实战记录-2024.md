@@ -1,4 +1,5 @@
 ---
+topic: ai
 title: Agent 开发实战记录
 date: 2024-11-20 01:22:51
 categories:
@@ -11,6 +12,7 @@ tags:
   - 架构
 description: 从零开始开发一个 AI Agent 系统，踩过的坑和总结的经验
 ---
+topic: ai
 
 # Agent 开发实战记录
 

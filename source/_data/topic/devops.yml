@@ -1,0 +1,6 @@
+name: devops
+title: 运维&DevOps
+subtitle: Docker、K8s 与自动化部署
+description: 运维与 DevOps 实践，包括 Docker 容器化、CI/CD 流水线、服务器运维等。
+icon: solar:server-bold-duotone
+color: '#1BCDFC'
