@@ -1,6 +1,6 @@
----	opic: ai
+---
 topic: ai
-title: 第一次接触 LLM
+title: 2023年第一次使用 ChatGPT，一个程序员的真实感受和思考
 date: 2023-03-20 00:58:42
 categories:
   - AI
@@ -13,7 +13,7 @@ description: 2023年第一次使用 ChatGPT，一个程序员的真实感受和�
 ---
 topic: ai
 
-# 第一次接触 LLM
+# 2023年第一次使用 ChatGPT，一个程序员的真实感受和思考
 
 2023年3月，ChatGPT 已经火得不行了。
 
