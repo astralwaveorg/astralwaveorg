@@ -15,14 +15,23 @@ giscus:
   data-term: 22
 ---
 
-{% banner 小伙伴们 如果宇宙中真有什么终极的逻辑，那就是我们终有一天会在舰桥上重逢，直到生命终结。 bg:/assets/banner/friends.jpg %}
+{% banner 朋友们 一起成长的技术小伙伴 bg:/assets/banner/friends.jpg %}
 {% navbar active:/friends/ [友链](/friends/) [关于](/about/) %}
 {% endbanner %}
 
 {% friends api:https://raw.github.xaox.cc/xaoxuu/friends/output/v2/data.json %}
 
-{% box [2023-12] 友链失联了怎么办? %}
-添加友链后如果网站长期无法访问，可能会被取消友链！如果您的网站恢复了，可以在申请友链时创建的那条 [issue](https://github.com/xaoxuu/friends/issues) 中评论告知。
+{% box [欢迎] 友链交换说明 %}
+
+如果你我的网站有内容交集，欢迎交换友链！
+
+但请先满足以下条件：
+- 原创内容为主，非采集站
+- 网站稳定可访问
+- 内容安全合规
+
+满足条件后，请在下方评论或者直接提 Issue 申请。
+
 {% endbox %}
 
 {% quot icon:hashtag 朋友们近期的文章 %}
@@ -32,48 +41,33 @@ giscus:
 
 {% quot icon:hashtag 如何交换友链？ %}
 
-1. 您的网站应满足以下全部条件：
-- **安全合规**：合法的、非营利性、无木马植入的 HTTPS 站点。
-- **非空壳网站**：网站内发布至少 {% mark 五篇 %} 原创文章，内容题材不限。
+1. **基本要求**：
+   - HTTPS 站点，内容原创
+   - 至少五篇原创文章
+   - 无不良内容
 
-2. 我们需要有一定的有效互动：
-- **先友后链**：与博主有至少 {% mark 半年 %} 的有效互动，例如 issue 或者评论留言。
+2. **互动要求**：
+   - 先行礼后君子，先打声招呼
+   - 可以在文章下面留言，或者 GitHub 交流
 
-{% box [2023-12] 友链申请条件变更说明 %}
-1. 降低了对商业广告的要求，可以有但是不能太多。
-2. 提高了「有效互动」的定义：5次更改为半年。
-{% endbox %}
+{% folding 申请友链 %}
 
-{% folding 我已满足全部条件，快告诉我如何交换友链！<img no-lazy style="display:inline;height:1em" src="https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/ablobcatattentionreverse.png"> %}
+{% note color:warning 请确保满足以上条件再申请 %}
 
-{% note color:warning 如果您没有满足上述条件，即时提交了申请也不会通过哦～ %}
+**第一步：留言或提 Issue**
 
-{% timeline %}
+在本文下方评论，或者去 GitHub 新建 Issue。
 
-<!-- node 第一步：新建 Issue -->
-
-新建 [GitHub Issue](https://github.com/xxx/friends/issues/) 按照模板格式填写并提交。
-
-为了提高图片加载速度，建议优化头像：
-1. 打开 [压缩图](https://www.yasuotu.com/) 上传自己的头像，将图片尺寸调整到 `144px` 后下载。
-2. 将压缩后的图片上传到 [去不图床](https://7bu.top/) 或者其它稳定的图床并使用此图片链接作为头像。
-
-<!-- node 第二步：添加友链并等待管理员审核 -->
-
-请添加本站到您的友链中：
+**第二步：添加本站友链**
 
 ```yaml
-title: xxx
-url: https://xxx.com
-avatar: 
-screenshot: 
+title: Astral Wave
+url: https://astralwave.org
+avatar: https://astralwave.org/assets/icon.svg
 ```
 
-待管理员审核通过，添加了 `active` 标签后，回来刷新即可生效。
+**第三步：等待审核**
 
-如果您需要更新自己的友链，请直接修改 issue 内容，大约 3 分钟内生效，无需等待博客重新部署。
-
-{% endtimeline %}
+一般 24 小时内处理，超过一周未处理可以提醒我。
 
 {% endfolding %}
-
