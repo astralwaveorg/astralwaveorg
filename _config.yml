@@ -19,7 +19,7 @@ language:
 timezone: "Asia/Shanghai"
 
 # URL
-url: https://astralwave.io
+url: https://blog.astralwave.org
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
