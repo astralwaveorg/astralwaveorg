@@ -1,6 +1,5 @@
 ---
 topic: frontend
-topic: frontend
 title: 技术进化的三重奏：2024年React核心能力深度剖析
 layout: post
 published: true

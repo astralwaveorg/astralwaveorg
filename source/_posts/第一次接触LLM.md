@@ -11,7 +11,6 @@ tags:
   - AI
 description: 2023年第一次使用 ChatGPT，一个程序员的真实感受和思考
 ---
-topic: ai
 
 # 2023年第一次使用 ChatGPT，一个程序员的真实感受和思考
 

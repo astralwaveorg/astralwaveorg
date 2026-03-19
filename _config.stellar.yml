@@ -1,27 +1,9 @@
-preconnect:
-  - https://gcore.jsdelivr.net
-  - https://unpkg.com
-  - https://cdn.bootcdn.net
+######## Stellar Theme Configuration ########
+# Star Field Blog - Optimized for v1.33.1
+# https://github.com/xaoxuu/hexo-theme-stellar
 
-inject:
-  head:
-    - <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    - <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-    - <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-    - <link rel="manifest" href="/assets/astral/site.webmanifest">
-    - <link rel="shortcut icon" href="/assets/favicon.ico">
-    - <meta name="theme-color" content="#f8f8f8">
-    - <link rel="stylesheet" type="text/css" href="/assets/css/index.css">
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css" media="all" />
 
-logo:
-  icon: /assets/icon.svg
-  title: 星辰跳动
-  subtitle: '技术与创新探索 | Tech & Innovation'
-
-open_graph:
-  enable: false
-
+######## Menubar ########
 menubar:
   columns: 4
   items:
@@ -30,9 +12,14 @@ menubar:
       icon: solar:documents-bold-duotone
       title: 博客
       url: /
-    - id: topic
+    - id: wiki
       theme: '#3DC550'
       icon: solar:notebook-bookmark-bold-duotone
+      title: 文档
+      url: /wiki/
+    - id: topic
+      theme: '#9C27B0'
+      icon: solar:tag-bold-duotone
       title: 专栏
       url: /topic/
     - id: explore
@@ -40,102 +27,167 @@ menubar:
       icon: solar:planet-bold-duotone
       title: 探索
       url: /explore/
-    - id: social
-      theme: '#F44336'
-      icon: solar:chat-square-like-bold-duotone
-      title: 社交
-      url: /friends/
 
+
+######## Comments ########
+comments:
+  service: twikoo
+  comment_title: 快来参与讨论吧~
+  lazyload: false
+  twikoo:
+    js: https://gcore.jsdelivr.net/npm/twikoo@1.6.40/dist/twikoo.all.min.js
+    envId: https://twikoo-worker.jonny-chang.workers.dev
+    requiredFields: []
+
+
+######## Tag Plugins ########
+tag_plugins:
+  note:
+    default_color: ''
+    border: true
+  checkbox:
+    interactive: false
+  copy:
+    toast: 复制成功
+  emoji:
+    default: https://gcore.jsdelivr.net/gh/cdn-x/emoticons@3.1/qq/{name}.gif
+    twemoji: https://gcore.jsdelivr.net/gh/twitter/twemoji/assets/svg/{name}.svg
+    qq: https://gcore.jsdelivr.net/gh/cdn-x/emoticons@3.1/qq/{name}.gif
+    aru: https://gcore.jsdelivr.net/gh/cdn-x/emoticons@3.1/aru/{name}.gif
+    tieba: https://gcore.jsdelivr.net/gh/cdn-x/emoticons@3.1/tieba/{name}.png
+    blobcat: https://gcore.jsdelivr.net/gh/cdn-x/emoticons@3.1/blobcat/{name}.gif
+  image:
+    fancybox: true
+
+
+######## Plugins ########
+plugins:
+  copycode:
+    enable: true
+    default_text: 'Copy'
+    success_text: 'Copied'
+    toast: 复制成功
+  fancybox:
+    enable: true
+    js: https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js
+    css: https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css
+    selector: .timenode p>img
+  mermaid:
+    enable: true
+    style_optimization: false
+    js: https://gcore.jsdelivr.net/npm/mermaid@v9/dist/mermaid.min.js
+    theme: neutral
+
+
+######## Style ########
+style:
+  prefers_theme: auto
+  smooth_scroll: true
+  font-size:
+    root: 16px
+    body: 17px
+    code: 85%
+    codeblock: 0.8125rem
+  font-family:
+    body: 'system-ui, "Microsoft Yahei", "Segoe UI", Arial, sans-serif'
+    code: 'Menlo, Monaco, Consolas, system-ui, monospace, sans-serif'
+    codeblock: 'Menlo, Monaco, Consolas, system-ui, monospace, sans-serif'
+  text-align: left
+  border-radius:
+    card-l: 24px
+    card: 16px
+    card-s: 12px
+    bar: 8px
+    image-l: 24px
+    image: 16px
+    image-s: 8px
+  color:
+    theme: 'hsl(192 98% 55%)'
+    accent: 'hsl(14 100% 57%)'
+    link: 'hsl(207 90% 54%)'
+  animated_avatar:
+    animate: auto
+    background: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp
+  codeblock:
+    scrollbar: 4px
+    highlightjs_theme: https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.9/build/styles/atom-one-dark.min.css
+  header_prefix:
+    h2: '#'
+    h3: '='
+    h4: '|'
+
+
+######## Default Assets ########
+default:
+  avatar: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg
+  link: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/link/8f277b4ee0ecd.svg
+  cover: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg
+  image: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg
+  project: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2779789.png
+  banner: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/banner/books.jpg
+  topic: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/10433048.png
+  loading: https://api.iconify.design/eos-icons:three-dots-loading.svg?color=%231cd0fd
+
+
+######## Article ########
+article:
+  type: tech
+  indent: false
+  cover_ratio: 2
+  banner_ratio: 2.5
+  auto_banner: false
+  auto_excerpt: 128
+  license: '本文采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
+  share: false
+  related_posts:
+    enable: false
+
+
+######## Site Tree ########
+site_tree:
+  home:
+    leftbar: welcome, recent
+    rightbar:
+  index_blog:
+    base_dir: blog
+    menu_id: post
+    leftbar: welcome, recent
+    rightbar:
+  index_topic:
+    base_dir: topic
+    menu_id: post
+  index_wiki:
+    base_dir: wiki
+    menu_id: wiki
+    leftbar: tree, related, recent
+    rightbar:
+  post:
+    menu_id: post
+    leftbar: related, recent
+    rightbar: ghrepo, toc
+  topic:
+    menu_id: post
+  wiki:
+    menu_id: wiki
+    leftbar: tree, related, recent
+    rightbar: ghrepo, toc
+
+
+######## Search ########
 search:
-  placeholder: 在 Astral Wave 中搜索...
   service: local_search
   local_search:
     field: all
     path: /search.json
     content: true
-    codeblock: true
 
-site_tree:
-  home:
-    sidebar: starter, welcome, recent
-  index_blog:
-    sidebar: starter, welcome, recent
-  index_topic:
-    menu_id: topic
-  topic:
-    menu_id: topic
 
-article:
-  auto_cover: false
-  type: tech # tech/story
-  auto_excerpt: 200
-  share: [wechat, weibo, email, link]
-  license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
-
-style:
-  color:
-    # 动态颜色（会根据明暗主题重设明度值，只用关心色相和饱和度即可）
-    background: 'hsl(212 16% 98%)' # 浅色背景颜色
-    block: 'hsl(212 8% 95%)' # 块背景颜色
-    code: 'hsl(14 100% 48%)' # 行内代码颜色
-    text: 'hsl(0 0% 20%)' # 文本颜色
-    # 主题色配置（不会根据明暗动态调整，请设置为通用的颜色）
-    theme: 'hsl(192 98% 55%)' # 主题色
-    accent: 'hsl(14 100% 57%)' # 强调色
-    link: 'hsl(207 90% 54%)' # 超链接颜色
-    button: 'hsl(192 98% 55%)' # 按钮颜色
-    hover: 'hsl(14 100% 57%)' # 按钮高亮颜色
-  text-align: justify
-  smooth_scroll: false
-  codeblock:
-    scrollbar: 0px
-  font-size:
-    body: 1rem
-  font-family:
-    logo: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
-    body: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
-    code: '"LXGW WenKai Screen", Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
-    codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
-  leftbar:
-    background-image: url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg)
-    blur-px: 100px # 模糊半径
-    blur-bg: var(--alpha60) # 模糊颜色
-
-# AI 摘要
-# https://github.com/qxchuckle/Post-Summary-AI
-tianli_gpt:
-  enable: #true
-  js: https://jsd.onmicrosoft.cn/gh/qxchuckle/Post-Summary-AI@6.0/chuckle-post-ai.min.js
-  field: post # all, post, wiki
-  key: 5Q5mpqRK5DkwT1X9Gi5e # tianli_gpt key
-  total_length: 1000 # 设置提交的字数限制，默认为1000字，上限为5000，超过5000字符将被截断
-  typewriter: true # 打字机动画
-  summary_directly: true # 是否直接显示摘要，否则显示 AI 简介
-  rec_method: all # all, web # 文章推荐方式，all：匹配数据库内所有文章进行推荐，web：仅当前站内的文章，默认all
-  hide_shuttle: true # 是否隐藏矩阵穿梭
-  summary_toggle: false # 是否开启切换简介功能，经过一些处理后，重新生成一份简介，这将消耗key字数
-  interface: # AI 信息展示
-    name: AI摘要
-    introduce: '我是文章辅助AI: QX-AI，点击下方的按钮，让我生成本文简介、推荐相关文章等。'
-    version: TianliGPT
-    button: ['介绍自己', '推荐文章', '生成摘要', '矩阵穿梭'] # 底部按钮文字
-
+######## Footer ########
 footer:
   social:
-    qq:
-      icon: '<img src="/assets/social/qq.png"/>'
-      url: tencent://message/?uin=10947580&Site=&Menu=yes
-    weibo:
-      icon: '<img src="/assets/social/weibo.png"/>'
-      url: https://weibo.com/u/2080081175
-    wechat:
-      icon: '<img src="/assets/social/wechat.png"/>'
-      url: /assets/social/wechat-qr.jpg
-    telegram:
-      icon: '<img src="/assets/social/telegram.png"/>'
-      url: https://t.me/astralwaveorg
-
-comments:
-  service: # beaudar, utterances, giscus, twikoo, waline, artalk
-  lazyload: # true
-
+    github:
+      icon: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2"/></svg>'
+      url: https://github.com/astralwaveorg
+  content: |
+   本站由 [{author}](/) 使用 [{theme.name} {theme.version}]({theme.repo}) 主题创建。
+    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议。

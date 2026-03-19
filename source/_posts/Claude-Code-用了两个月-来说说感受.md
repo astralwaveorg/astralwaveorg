@@ -13,7 +13,6 @@ tags:
 description: 用了两个月 Claude Code，真实感受，不是软文
 ---
 
-topic: ai
 
 # Claude Code 用了两个月，来说说感受
 

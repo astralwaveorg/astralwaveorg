@@ -1,6 +1,5 @@
 ---
 topic: backend
-topic: backend
 title: Redis 缓存实战
 date: 2021-01-25 01:28:53
 categories:

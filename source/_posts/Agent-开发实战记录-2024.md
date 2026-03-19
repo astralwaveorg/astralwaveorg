@@ -12,7 +12,6 @@ tags:
   - 架构
 description: 从零开始开发一个 AI Agent 系统，踩过的坑和总结的经验
 ---
-topic: ai
 
 # Agent 开发实战记录
 

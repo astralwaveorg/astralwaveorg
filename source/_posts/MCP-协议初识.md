@@ -11,7 +11,6 @@ tags:
   - 协议
 description: Model Context Protocol 是什么？AI Agent 的新标准
 ---
-topic: ai
 
 # MCP 协议初识
 

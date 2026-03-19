@@ -1,6 +1,5 @@
 ---
 topic: beginner
-topic: backend
 title: Python 列表操作小结
 date: 2019-05-22 01:15:43
 categories:

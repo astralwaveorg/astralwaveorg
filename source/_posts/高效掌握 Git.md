@@ -1,6 +1,5 @@
 ---
 topic: beginner
-topic: beginner
 title: 高效掌握 Git
 layout: post
 published: true

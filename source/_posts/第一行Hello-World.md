@@ -1,6 +1,5 @@
 ---
 topic: beginner
-topic: beginner
 title: 第一行 Hello World
 date: 2019-03-15 00:32:18
 categories:

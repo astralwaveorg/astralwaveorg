@@ -1,6 +1,5 @@
 ---
 topic: frontend
-topic: frontend
 title: 第一次用 Vue.js 写页面
 date: 2020-09-17 00:38:27
 categories:
