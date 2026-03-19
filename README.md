@@ -1,36 +1,45 @@
-# 星辰跳动 - 我的个人博客
+# 向阳
 
-星辰跳动使用「Stellar」主题。Stellar 是一个内置文档系统的简约商务风 Hexo 主题，支持丰富的标签和动态数据组件。
+软件架构师。写代码、搭系统、偶尔写写博客。
 
+---
 
-## Getting Started
+## 专注领域
 
-检查你的环境:
+**系统架构** — 微服务、分布式系统、高可用设计。喜欢把复杂的东西拆干净，也喜欢在拆干净之后重新组装回来。
 
-```yaml
-Hexo: 6.3.0 ~ 7.3.0
-hexo-cli: 4.3.0 ~ latest
-node: 14.17.3 ～ 22.12.0 # 建议选择 LTS 版本。
-npm: 6.14.13 ~ 10.2.3
-```
+**运维 & DevOps** — Linux 是主场，容器化和自动化是日常。管过不少服务器，从香港到韩国到美国，踩过的坑大概能出一本书。
 
-编辑你的 `_config.yml`:
+**AI 与大模型** — LLM、Agent、RAG、Prompt Engineering。不追热点，但追本质。
 
-```yaml
-theme: stellar
-```
+---
 
-在终端中安装 Stellar:
+## 技术栈
 
-```bash
-npm i
-npm i hexo-theme-stellar
-```
+| 分类 | 关键词 |
+|------|--------|
+| 语言 | Python / Go / TypeScript / Shell |
+| 框架 | Hexo / Express / FastAPI |
+| 基础设施 | Nginx / Docker / Oracle Linux / OpenWrt |
+| 网络 | VPC / 反向代理 / Tailscale / WireGuard |
+| AI | LLM / RAG / Agent / Ollama / OpenAI API |
 
-## 用法
+---
 
-查看文档: https://xaoxuu.com/wiki/stellar/
+## 基础设施
 
-## 示例
+自建私有云跨越多个节点，用的是最朴素的方式——SSH + 脚本 + Nginx。没有 GUI 的服务器才是真实的服务器。
 
-https://xaoxuu.com/wiki/stellar/examples/
+---
+
+## 博客
+
+技术博客，记录架构设计、后端开发、运维实践和 AI 应用。不追流量，只写自己真正折腾过的东西。
+
+---
+
+## 开源
+
+部分项目在 GitHub，更多项目在跑。
+
+如果你也在折腾分布式系统、DevOps 自动化或者 AI 应用，欢迎交流。
