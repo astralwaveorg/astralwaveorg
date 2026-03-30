@@ -35,7 +35,7 @@ description: 基于 SchemaStore Claude Code Settings Schema 的完整配置参�
 | 配置项 | 类型 | 默认值 | 说明 |
 |--------|------|--------|------|
 | `$schema` | string | - | JSON Schema 引用 |
-| `language` | string | "en" | 响应语言 (如 "zh-CN", "ja", "es") |
+| `language` | string | "en" | 响应语言 (如 "chinese", "ja", "es") |
 | `respectGitignore` | boolean | true | 文件选择器是否遵守 .gitignore |
 | `cleanupPeriodDays` | number | 30 | 聊天记录保留天数 (0=禁用) |
 | `autoMemoryEnabled` | boolean | true | 启用自动记忆保存 |
@@ -534,7 +534,7 @@ Hooks 允许在特定事件前后执行自定义命令。
   "forceLoginOrgUUID": "",
   "otelHeadersHelper": "",
   "outputStyle": "default",
-  "language": "zh-CN",
+  "language": "chinese",
   "skipWebFetchPreflight": false,
   "sandbox": {
     "enabled": false,
