@@ -2,6 +2,7 @@
 topic: devops
 title: 解决 Telegram 文件下载失败：一次 SSRF 安全策略配置踩坑记录
 date: 2026-04-14 22:25:49
+slug: telegram-file-download-ssrf-fix
 categories:
   - 运维
 tags:
